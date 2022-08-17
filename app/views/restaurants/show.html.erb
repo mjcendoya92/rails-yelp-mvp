@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @restaurant %>
+
+<h2>Reviews for this restaurant</h2>
+
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>
+  <% end %>
+
+</ul>
